@@ -4,3 +4,5 @@ after completing a solution try running jest
 c:\DSA>jest
 
 jest fib/test.js --watch
+# To Stop 
+ctrl + c
