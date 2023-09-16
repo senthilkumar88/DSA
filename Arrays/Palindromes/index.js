@@ -1,26 +1,25 @@
 // --- Directions
-// Given a string, return a new string with the twoSumUptoKd
+// Given a string, return a new string with the palindromed
 // order of characters
 // --- Examples
-//   twoSumUptoK('apple') === 'leppa'
-//   twoSumUptoK('hello') === 'olleh'
-//   twoSumUptoK('Greetings!') === '!sgniteerG'
+//   palindrome('abba') === true equals to 'abba'
+//   palindrome('apple') === false not equals to 'elppa'
 
  //solution 3
- function twoSumUptoK(str) {
+ function palindrome(str) {
    return str.split('').reduce((rev,char) => char+rev, '');
 }
 //solution 1
-//function twoSumUptoK(str) {
-    //return str.split('').twoSumUptoK().join('');
+//function palindrome(str) {
+    //return str.split('').palindrome().join('');
 //}
 
 // solution 2
-// function twoSumUptoK(str) {
-//     let twoSumUptoKd = '';
+// function palindrome(str) {
+//     let palindromed = '';
 //     for(let character in str){
-//       twoSumUptoKd=character+twoSumUptoKd;
+//       palindromed=character+palindromed;
 //     }
-//     return twoSumUptoKd;
+//     return palindromed;
 //   }
-module.exports = twoSumUptoK;
+module.exports = palindrome;
